@@ -1,0 +1,185 @@
+#POSITION,
+.pageCollectionLink {
+position: absolute;
+}
+
+.pageCollectionItem {
+position: relative;
+}
+
+#DISPLAY,
+body {
+display: flex;
+}
+
+.startLinkLabelText,
+.startLinkSubmit,
+.pageCollectionLink,
+.pageCollectionURL {
+display: block;
+}
+
+#CO-ORDINATES,
+.pageCollectionLink {
+top: 0;
+left: 0;
+}
+
+#FLEX-PARENT,
+body {
+justify-content: center;  
+}
+
+#WIDTH_HEIGHT,
+.kenpon {
+width: 800px;
+}
+
+.pageCollectionLink {
+width: 100%;
+height: 100%;
+}
+
+.startLinkLabelText,
+.startLinkInput {
+width: 100%;  
+}
+
+.startLinkFieldset,
+.pageCollection {
+width: 100%;
+}
+
+.pageCollectionItem {
+height: 48px;
+line-height: 24px;
+}
+
+#MARGIN_PADDING,
+.startLinkSubmit {
+margin: 24px auto;
+}
+
+.startLinkLabelText {
+padding: 6px 0 12px;  
+}
+
+.pageCollection {
+margin-left: 0;
+padding-left: 0;
+}
+
+.pageCollectionItem {
+padding: 0;
+}
+
+.pageCollectionLink {
+padding-left: 36px;
+}
+
+#TEXT-COLOR,
+.pageCollectionLink {
+color: rgb(255, 255, 255);   
+}
+
+#TEXT-SIZE,
+.pageCollectionItem {
+font-size: 18px;
+}
+
+.pageCollectionURL {
+font-size: 14px;
+}
+
+#TEXT-PRESENTATION,
+.kenponHeading {
+text-align: center;
+}
+
+.pageCollectionURL {
+font-style: italic;
+}
+
+.startLinkLabel,
+.pageCollectionTitle {
+font-weight: 900;
+}
+
+.pageCollectionItem:hover .pageCollectionLink {
+text-shadow: 2px 2px 2px rgb(191, 191, 255);   
+}
+
+#BORDER,
+.pageCollection li {
+border-top: 1px solid rgba(255, 255, 255, 0.2) ;
+border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.pageCollection li:first-of-type {
+border-top: none;
+}
+
+.pageCollection li:last-of-type {
+border-bottom: none;
+}
+
+#BACKGROUND,
+
+.pageCollection li:nth-of-type(odd) {
+background-color: rgb(63, 63, 227);
+}
+
+.pageCollection li:nth-of-type(even) {
+background-color: rgb(63, 63, 255);
+}
+
+.pageCollection li:hover {
+background-color: rgb(91, 91, 255);
+}
+
+#ELEMENT-PRESENTATION,
+.pageCollection {
+overflow: hidden;
+}
+
+.pageCollectionItem {
+white-space: nowrap;
+}
+
+.pageCollectionLink {
+text-decoration: none;   
+}
+
+.pageCollectionItem:hover {
+cursor: pointer;
+}
+
+.pageCollectionItem:hover .pageCollectionTitle {
+text-decoration: underline;   
+}
+
+.pageCollectionItem:hover .pageCollectionURL {
+text-decoration: none;   
+}
+
+.pageCollection {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+.pageCollectionItem::before {
+  content: counter(section) ".";
+  counter-increment: section;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  height: 24px;
+  margin: -2px 12px 0 0;
+  padding: 13px 6px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 900;
+  background-color: rgba(0, 0, 0, 0.3);
+}
